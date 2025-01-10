@@ -55,5 +55,7 @@ function toggleModal(element){
 
     element.innerText = modal.classList.contains("hide-modal") ? "expand_less" : "expand_more";
 
+    const toggleText = document.getElementById('toggleText');
+    toggleText.innerText = modal.classList.contains("hide-modal") ? "Show Form" : "Hide Form"; // Change text dynamically
 }
 

@@ -36,11 +36,12 @@
     </main>
 
     <section class="modal hide-modal" id="modal">
-      <span
-        class="material-symbols-outlined toggle up_down"
-        onclick="toggleModal(this)"
-        >expand_less</span
-      >
+      <span class="toggle-container">
+        <span class="material-symbols-outlined toggle up_down" onclick="toggleModal(this)">
+          expand_less
+        </span>
+        <span id="toggleText">Show Form</span>
+      </span>
       <form id="create-task-form">
         <input
           type="text"

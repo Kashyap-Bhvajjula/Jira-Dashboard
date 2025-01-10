@@ -49,7 +49,17 @@ h1{
     max-height: 485px;
     overflow: scroll;
     overflow-x: hidden; /* Hide vertical scrollbar */
+    overflow-y: auto; /* Add vertical scrollbar when necessary */
 }
+
+  .container h2{
+    position: sticky; /* Make the title sticky */
+  top: 0; /* Stick to the top of the container */
+  background-color: #fff; /* Ensure background is solid when sticking */
+  padding: 10px 0; /* Add padding around the text */
+  z-index: 10; /* Make sure it appears above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+  }
 
 main{
     display: grid;
@@ -101,4 +111,22 @@ textarea{
 
 .hide-modal form{
     display: none;
+}
+
+.toggle-container {
+  display: inline-flex;
+  align-items: center;  /* Center vertically */
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal .toggle {
+  margin-right: 10px;  /* Space between icon and text */
+}
+
+#toggleText {
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  bottom: 10px;
 }
